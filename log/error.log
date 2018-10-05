@@ -1,0 +1,20 @@
+2018/04/17 10:52:13 [error] 14943#0: *1 open() "/var/www/myamouragency.com/web/en" failed (2: No such file or directory), client: 159.203.248.204, server: _, request: "GET /en HTTP/1.1", host: "185.174.173.168"
+2018/04/17 10:53:46 [error] 14943#0: *10 open() "/var/www/myamouragency.com/web/en" failed (2: No such file or directory), client: 159.203.248.204, server: _, request: "GET /en HTTP/1.1", host: "185.174.173.168"
+2018/04/17 20:49:21 [error] 16001#0: *1256 access forbidden by rule, client: 80.82.77.33, server: _, request: "GET /.well-known/security.txt HTTP/1.1", host: "185.174.173.168"
+2018/04/22 12:17:31 [error] 16001#0: *15008 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/myamouragency.com/views/chat/index.php on line 2" while reading response header from upstream, client: 89.46.222.170, server: _, request: "GET /en/chat HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "185.174.173.168"
+2018/04/22 12:18:04 [error] 16001#0: *15008 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'Yii' has no effect in /var/www/myamouragency.com/views/chat/index.php on line 2" while reading response header from upstream, client: 89.46.222.170, server: _, request: "GET /en/chat HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "185.174.173.168"
+2018/04/24 18:23:47 [error] 14228#0: *2575 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/myamouragency.com/controllers/ChatController.php on line 151. in /var/www/myamouragency.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/myamouragency.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/myamouragency.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/myamouragency.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/myamouragency.com/controllers/ChatController.php on line 151. in /var/www/myamouragency.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/myamourag" while reading upstream, client: 89.46.222.170, server: _, request: "GET /en/chat HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "185.174.173.168"
+2018/04/26 08:01:56 [error] 14228#0: *8976 directory index of "/var/www/myamouragency.com/web/img/" is forbidden, client: 89.46.222.170, server: _, request: "GET /img/ HTTP/1.1", host: "185.174.173.168", referrer: "http://185.174.173.168/en/chat"
+2018/04/27 09:32:39 [error] 14227#0: *17695 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 155.158.141.181, server: _, request: "GET /en/chat/update-online HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "185.174.173.168", referrer: "http://185.174.173.168/en/chat"
+2018/04/27 20:49:11 [error] 14228#0: *24545 FastCGI sent in stderr: "PHP message: PHP Fatal error:  app\widgets\SubscriptionFormWidget cannot implement yii\base\Widget - it is not an interface in /var/www/myamouragency.com/widgets/SubscriptionFormWidget.php on line 13" while reading response header from upstream, client: 89.46.222.170, server: _, request: "GET /en/chat HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "185.174.173.168"
